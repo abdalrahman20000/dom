@@ -95,7 +95,7 @@ document.body.appendChild(ol_fruit);
 //-----------------------Q2-----------------------------
 
 function turn(array_ = [], num) {
-    if (num < 0 || num > array_.length) {
+    if (num < 0 || num > array_.length - 1) {
         return -1;
     }
     else {
@@ -104,8 +104,8 @@ function turn(array_ = [], num) {
 }
 
 let test = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-let num = 5;
+let num = prompt("Enter a number");
 
 
 
-console.log(turn(test, num));
+console.log(turn(test, num)); 5
